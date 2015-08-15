@@ -1,0 +1,102 @@
+.\"$Id$
+.\"
+.\"Modified from man(1) of FreeBSD, the NetBSD mdoc.template, and mdoc.samples.
+.\"See Also:
+.\"man mdoc.samples for a complete listing of options
+.\"man mdoc for the short list of editing options
+.\"/usr/share/misc/mdoc.template
+.\"
+.Dd 8/4/10               \" DATE 
+.Dt ukrun 1 	      	 \" Program name and manual section number 
+.Os Darwin/Linux
+.Sh NAME                 \" Section Header - required - don't modify 
+.Nm ukrun
+.\" The following lines are read in generating the apropos(man -k) database. Use only key
+.\" words here as the database is built based on the words here and in the .ND line. 
+.\".Nm Other_name_for_same_program(),
+.\".Nm Yet another name for the same program.
+.\" Use .Nm macro to designate other names for the documented program.
+.Nd Run UnitKit tests.
+.Sh SYNOPSIS              \" Section Header - required - don't modify
+.Nm
+.Op Fl eEvq               \" [-abcd]
+.Op Fl -test Ar <class[::method]>      \" [-a path] 
+bundle/shared library     \" Arguments
+.Sh DESCRIPTION           \" Section Header - required - don't modify
+.Nm
+is used to run the tests contained in a test bundle or shared library. 
+A test is a method on an Objective-C class, that implements the 
+.Ar UKTest 
+protocol. The name of the method must have the prefix 
+.Ar test 
+and must be an instance method.
+
+.Sh OPTIONS              \" Section Header - required - don't modify
+.Pp
+.Bl -tag -width -indent  \" Differs from above in tag removed 
+.It Fl e                 \"-a flag as a list item
+Do not continue testing if an unexpected exception occured. 
+.It Fl q
+Do not output test results, if there was no failed test.
+.It Fl r
+If a test fails, stops processing
+.It Fl v
+Gives the version of 
+.Nm ukrun
+.
+.It Fl -test Ar <class[::method]> run only a specific class 
+or even one only one specific method. You can have multiple
+.Ar --test 
+options.
+.El                      \" Ends the list
+
+.Sh EXAMPLES DARWIN              \" Section Header - required - don't modify
+
+ukrun -e /tmp/MyTestBundle.bundle
+
+ukrun -e --test MyTestClass::testOne /tmp/MyTestBundle.bundle
+
+ukrun -e --test MyOtherTestClass /tmp/MyTestBundle.bundle
+
+.Sh EXAMPLES LINUX
+
+ukrun -e /tmp/libTestBundle.so
+
+.Pp
+.\" .Sh ENVIRONMENT      \" May not be needed
+.\" .Bl -tag -width "ENV_VAR_1" -indent \" ENV_VAR_1 is width of the string ENV_VAR_1
+.\" .It Ev ENV_VAR_1
+.\" Description of ENV_VAR_1
+.\" .It Ev ENV_VAR_2
+.\" Description of ENV_VAR_2
+.\" .El                      
+.Sh FILES                \" File used or created by the topic of the man page
+.Bl -tag -width "/Users/joeuser/Library/really_long_file_name" -compact
+.It Pa /Library/Frameworks/UnitKit.framework
+framework used by 
+.Nm
+under Darwin.
+
+.It Pa /usr/lib/libUnitKit.so
+shared library used by 
+.Nm
+under Linux.
+.El                      \" Ends the list
+.\" .Sh DIAGNOSTICS       \" May not be needed
+.\" .Bl -diag
+.\" .It Diagnostic Tag
+.\" Diagnostic informtion here.
+.\" .It Diagnostic Tag
+.\" Diagnostic informtion here.
+.\" .El
+.Sh HOMEPAGE
+
+https://bitbucket.org/mulle_nat/unitkit-fixes
+
+.Sh SEE ALSO 
+.\" List links in ascending order by section, alphabetically within a section.
+.\" Please do not reference files that do not exist without filing a bug report
+.Xr cc 1 , 
+.Xr ld 1 
+.\" .Sh BUGS              \" Document known, unremedied bugs 
+.\" .Sh HISTORY           \" Document history if command behaves in a unique manner

@@ -1,0 +1,1643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		41DB49DA146BF286003DE495 /* UnitKit-Install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 41DB49EE146BF357003DE495 /* Build configuration list for PBXAggregateTarget "UnitKit-Install" */;
+			buildPhases = (
+			);
+			dependencies = (
+				41DB49DF146BF2BE003DE495 /* PBXTargetDependency */,
+				41DB49E1146BF2C1003DE495 /* PBXTargetDependency */,
+				41DB49E5146BF2ED003DE495 /* PBXTargetDependency */,
+				41EE77D31500F08A00B43EDE /* PBXTargetDependency */,
+				41EE77D51500F08C00B43EDE /* PBXTargetDependency */,
+			);
+			name = "UnitKit-Install";
+			productName = "UnitKit-Install";
+		};
+		AE8CCFC30680B7D4008CA594 /* Xcode Integration */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 417EBCBF08C5FB43001B041E /* Build configuration list for PBXAggregateTarget "Xcode Integration" */;
+			buildPhases = (
+				41DB4A02146BF4D4003DE495 /* ShellScript */,
+				41DB4900146BE35C003DE495 /* Copy File Templates */,
+				41DB490A146BE453003DE495 /* Copy Target Templates */,
+			);
+			dependencies = (
+			);
+			name = "Xcode Integration";
+			productName = "Xcode Integration";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		4162DB9C15122C6900B76681 /* UKTestHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = AE613E6705F181AE009B020F /* UKTestHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4162DB9D15122C6F00B76681 /* UKTestHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = AE613E6705F181AE009B020F /* UKTestHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4162DBA915122CB100B76681 /* UnitKitParentIncludes.h in Headers */ = {isa = PBXBuildFile; fileRef = 41DB4966146BE989003DE495 /* UnitKitParentIncludes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4162DBAA15122CB700B76681 /* UnitKitParentIncludes.h in Headers */ = {isa = PBXBuildFile; fileRef = 41DB4966146BE989003DE495 /* UnitKitParentIncludes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41C25D7A14AA2A55000C7CCA /* UnitKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* UnitKit.framework */; };
+		41D32BFB14B495BE00731C06 /* ukrun.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 41D32BF714B495BC00731C06 /* ukrun.1 */; };
+		41DB4954146BE7F1003DE495 /* UnitKit in Copy File Templates */ = {isa = PBXBuildFile; fileRef = 41DB4947146BE7C0003DE495 /* UnitKit */; };
+		41DB4955146BE7F6003DE495 /* UnitKit in Copy Target Templates */ = {isa = PBXBuildFile; fileRef = 41DB494F146BE7E4003DE495 /* UnitKit */; };
+		41DB4967146BE989003DE495 /* UnitKitParentIncludes.h in Headers */ = {isa = PBXBuildFile; fileRef = 41DB4966146BE989003DE495 /* UnitKitParentIncludes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41DB4970146BE9CE003DE495 /* _UnitKitParentIncludes.h in Headers */ = {isa = PBXBuildFile; fileRef = 41DB496C146BE9CE003DE495 /* _UnitKitParentIncludes.h */; settings = {ATTRIBUTES = (); }; };
+		41DB49BA146BF077003DE495 /* UKTestBundleOne.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AE70B65405F7100400D56367 /* UKTestBundleOne.bundle */; };
+		41DB49C3146BF17D003DE495 /* TestFramework.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = AEBED01906AFADB000451E26 /* TestFramework.framework */; };
+		41DB4B9B146C0423003DE495 /* UnitKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* UnitKit.framework */; };
+		41DB4C33146C1A3C003DE495 /* README in Resources */ = {isa = PBXBuildFile; fileRef = AEA6373D06D16EAE004DF854 /* README */; };
+		41EE77AD1500E13A00B43EDE /* uk_handler.h in Headers */ = {isa = PBXBuildFile; fileRef = 41EE77AB1500E13A00B43EDE /* uk_handler.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		41EE77AE1500E13A00B43EDE /* uk_handler.c in Sources */ = {isa = PBXBuildFile; fileRef = 41EE77AC1500E13A00B43EDE /* uk_handler.c */; };
+		41EE77B21500E71C00B43EDE /* uk_handler_plain_c.c in Sources */ = {isa = PBXBuildFile; fileRef = 41EE77B11500E71C00B43EDE /* uk_handler_plain_c.c */; };
+		41EE77CB1500EFBD00B43EDE /* libobjc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 41EE77CA1500EFBD00B43EDE /* libobjc.dylib */; };
+		41EE77CD1500F00A00B43EDE /* uk_handler_objc.c in Sources */ = {isa = PBXBuildFile; fileRef = 41EE77B41500E73500B43EDE /* uk_handler_objc.c */; };
+		41EE77CE1500F00B00B43EDE /* uk_handler.c in Sources */ = {isa = PBXBuildFile; fileRef = 41EE77AC1500E13A00B43EDE /* uk_handler.c */; };
+		41EE77CF1500F01500B43EDE /* uk_handler.h in Headers */ = {isa = PBXBuildFile; fileRef = 41EE77AB1500E13A00B43EDE /* uk_handler.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		41EE77D01500F02700B43EDE /* UKTest.h in Headers */ = {isa = PBXBuildFile; fileRef = AE73F21F05F1573200CAFD4D /* UKTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41EE77D11500F02F00B43EDE /* UKTest.h in Headers */ = {isa = PBXBuildFile; fileRef = AE73F21F05F1573200CAFD4D /* UKTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41EE78F915011E2200B43EDE /* UnitKit.h in Headers */ = {isa = PBXBuildFile; fileRef = AE923B6D05C3B57600549058 /* UnitKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41EE78FA15011E2600B43EDE /* UnitKit.h in Headers */ = {isa = PBXBuildFile; fileRef = AE923B6D05C3B57600549058 /* UnitKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE41F3D206812A3F0044760C /* UKRunner.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE41F3D106812A3F0044760C /* UKRunner.strings */; };
+		AE613E6905F181AE009B020F /* UKTestHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = AE613E6705F181AE009B020F /* UKTestHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE613E6A05F181AE009B020F /* UKTestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AE613E6805F181AE009B020F /* UKTestHandler.m */; };
+		AE702C3A05FEC7920049C79F /* UKTestMessages.m in Sources */ = {isa = PBXBuildFile; fileRef = AE702C3805FEC7920049C79F /* UKTestMessages.m */; };
+		AE702CCC05FED1060049C79F /* UKRunnerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE702CCA05FED1060049C79F /* UKRunnerTests.m */; };
+		AE70B66705F71D5500D56367 /* TestOne.m in Sources */ = {isa = PBXBuildFile; fileRef = AE70B66505F71D5500D56367 /* TestOne.m */; };
+		AE70B66B05F71D8B00D56367 /* UnitKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* UnitKit.framework */; };
+		AE70B72605F73A1F00D56367 /* TestTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = AE70B72405F73A1F00D56367 /* TestTwo.m */; };
+		AE70B72C05F73A3F00D56367 /* TestThree.m in Sources */ = {isa = PBXBuildFile; fileRef = AE70B72A05F73A3F00D56367 /* TestThree.m */; };
+		AE73F22105F1573200CAFD4D /* UKTest.h in Headers */ = {isa = PBXBuildFile; fileRef = AE73F21F05F1573200CAFD4D /* UKTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE923B6E05C3B57600549058 /* UnitKit.h in Headers */ = {isa = PBXBuildFile; fileRef = AE923B6D05C3B57600549058 /* UnitKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE923B7105C3B62B00549058 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE923B6F05C3B62B00549058 /* InfoPlist.strings */; };
+		AE923D8605C3B90100549058 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE923D8505C3B90100549058 /* main.m */; };
+		AE923D8B05C3B9EC00549058 /* UKRunner.h in Headers */ = {isa = PBXBuildFile; fileRef = AE923D8905C3B9EC00549058 /* UKRunner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE923D8C05C3B9EC00549058 /* UKRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = AE923D8A05C3B9EC00549058 /* UKRunner.m */; };
+		AEBED02906AFAE7800451E26 /* TestClass.h in Headers */ = {isa = PBXBuildFile; fileRef = AEBED02706AFAE7800451E26 /* TestClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AEBED02A06AFAE7800451E26 /* TestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBED02806AFAE7800451E26 /* TestClass.m */; };
+		AEBED0E306B058A100451E26 /* UKTestFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBED04D06AFB1AC00451E26 /* UKTestFramework.m */; };
+		AEBED16906B0603600451E26 /* NOTICE in Resources */ = {isa = PBXBuildFile; fileRef = AEBED16806B0603600451E26 /* NOTICE */; };
+		AEBEF4B905FAF2910020FB35 /* UKTestMacros.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBEF4B705FAF2910020FB35 /* UKTestMacros.m */; };
+		AEBEF55D05FBEFD10020FB35 /* UKTestLineNumbers.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBEF55B05FBEFD10020FB35 /* UKTestLineNumbers.m */; };
+		AEBEF56605FBF8010020FB35 /* UKTestFileNames.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBEF56405FBF8010020FB35 /* UKTestFileNames.m */; };
+		AEEB74D106B1BEFD00BE53E8 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = AEEB74D006B1BEFD00BE53E8 /* LICENSE */; };
+		AEFFFA71060140EB0002576C /* UKTestHandler.strings in Resources */ = {isa = PBXBuildFile; fileRef = AEFFFA70060140EB0002576C /* UKTestHandler.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		41DB49DE146BF2BE003DE495 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = UnitKit;
+		};
+		41DB49E0146BF2C1003DE495 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE923B2B05C3B1CE00549058;
+			remoteInfo = ukrun;
+		};
+		41DB49E4146BF2ED003DE495 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE8CCFC30680B7D4008CA594;
+			remoteInfo = "Xcode Integration";
+		};
+		41EE77D21500F08A00B43EDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41EE77991500E0F800B43EDE;
+			remoteInfo = unit_c_kit;
+		};
+		41EE77D41500F08C00B43EDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41EE77C41500EFAF00B43EDE;
+			remoteInfo = unit_objc_kit;
+		};
+		AE70B65605F7100E00D56367 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = UnitKit;
+		};
+		AE70B65C05F7101600D56367 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE70B65305F7100400D56367;
+			remoteInfo = UKTestBundle1;
+		};
+		AE923B3805C3B1E900549058 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = UnitKit;
+		};
+		AE923B3A05C3B1ED00549058 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = UnitKit;
+		};
+		AE923B3C05C3B1F300549058 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE923B2B05C3B1CE00549058;
+			remoteInfo = ukrun;
+		};
+		AEBED02B06AFAE9E00451E26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AEBED01806AFADB000451E26;
+			remoteInfo = TestEmbeddedFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		41D32BF814B495BC00731C06 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = $INSTALL_PREFIX_PLATFORM/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				41D32BFB14B495BE00731C06 /* ukrun.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		41DB4900146BE35C003DE495 /* Copy File Templates */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "$TEMPLATE_DIRECTORY/File Templates";
+			dstSubfolderSpec = 0;
+			files = (
+				41DB4954146BE7F1003DE495 /* UnitKit in Copy File Templates */,
+			);
+			name = "Copy File Templates";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		41DB490A146BE453003DE495 /* Copy Target Templates */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "$TEMPLATE_DIRECTORY/Target Templates";
+			dstSubfolderSpec = 0;
+			files = (
+				41DB4955146BE7F6003DE495 /* UnitKit in Copy Target Templates */,
+			);
+			name = "Copy Target Templates";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		41DB49CA146BF1CB003DE495 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				41DB49C3146BF17D003DE495 /* TestFramework.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		32DBCF5E0370ADEE00C91783 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41072532150E33A600C7A633 /* uninstall */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = uninstall; path = ../uninstall; sourceTree = SOURCE_ROOT; };
+		41D32B5414B47BD600731C06 /* GNUmakefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = GNUmakefile; path = ../GNUmakefile; sourceTree = SOURCE_ROOT; };
+		41D32BF714B495BC00731C06 /* ukrun.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = ukrun.1; sourceTree = "<group>"; };
+		41DB4947146BE7C0003DE495 /* UnitKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = UnitKit; path = "Xcode Integration/File Templates/UnitKit"; sourceTree = "<group>"; };
+		41DB494F146BE7E4003DE495 /* UnitKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = UnitKit; path = "Xcode Integration/Target Templates/UnitKit"; sourceTree = "<group>"; };
+		41DB4966146BE989003DE495 /* UnitKitParentIncludes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitKitParentIncludes.h; sourceTree = "<group>"; };
+		41DB496C146BE9CE003DE495 /* _UnitKitParentIncludes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _UnitKitParentIncludes.h; sourceTree = "<group>"; };
+		41EE779A1500E0F800B43EDE /* libunit_c_kit.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libunit_c_kit.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		41EE77AB1500E13A00B43EDE /* uk_handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uk_handler.h; sourceTree = "<group>"; };
+		41EE77AC1500E13A00B43EDE /* uk_handler.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = uk_handler.c; sourceTree = "<group>"; };
+		41EE77B11500E71C00B43EDE /* uk_handler_plain_c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = uk_handler_plain_c.c; sourceTree = "<group>"; };
+		41EE77B41500E73500B43EDE /* uk_handler_objc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = uk_handler_objc.c; sourceTree = "<group>"; };
+		41EE77C51500EFAF00B43EDE /* libunit_objc_kit.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libunit_objc_kit.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		41EE77CA1500EFBD00B43EDE /* libobjc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libobjc.dylib; path = /usr/lib/libobjc.dylib; sourceTree = "<absolute>"; };
+		8DC2EF5B0486A6940098B216 /* UnitKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UnitKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE39C80605FBFF7F0011F066 /* UKTaskTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UKTaskTests.h; sourceTree = "<group>"; };
+		AE39C80705FBFF7F0011F066 /* UKTaskTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UKTaskTests.m; sourceTree = "<group>"; };
+		AE41F3CF06812A310044760C /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/UKRunner.strings; sourceTree = "<group>"; };
+		AE55498A06C5ACDC005FF2F3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		AE613E6705F181AE009B020F /* UKTestHandler.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = UKTestHandler.h; sourceTree = "<group>"; };
+		AE613E6805F181AE009B020F /* UKTestHandler.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = UKTestHandler.m; sourceTree = "<group>"; };
+		AE702C3705FEC7920049C79F /* UKTestMessages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UKTestMessages.h; sourceTree = "<group>"; };
+		AE702C3805FEC7920049C79F /* UKTestMessages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UKTestMessages.m; sourceTree = "<group>"; };
+		AE702CC905FED1060049C79F /* UKRunnerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UKRunnerTests.h; sourceTree = "<group>"; };
+		AE702CCA05FED1060049C79F /* UKRunnerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UKRunnerTests.m; sourceTree = "<group>"; };
+		AE70B65405F7100400D56367 /* UKTestBundleOne.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UKTestBundleOne.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE70B65505F7100400D56367 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE70B66405F71D5500D56367 /* TestOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestOne.h; sourceTree = "<group>"; };
+		AE70B66505F71D5500D56367 /* TestOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestOne.m; sourceTree = "<group>"; };
+		AE70B72305F73A1F00D56367 /* TestTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTwo.h; sourceTree = "<group>"; };
+		AE70B72405F73A1F00D56367 /* TestTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTwo.m; sourceTree = "<group>"; };
+		AE70B72905F73A3F00D56367 /* TestThree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestThree.h; sourceTree = "<group>"; };
+		AE70B72A05F73A3F00D56367 /* TestThree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestThree.m; sourceTree = "<group>"; };
+		AE73F21F05F1573200CAFD4D /* UKTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UKTest.h; sourceTree = "<group>"; };
+		AE923B2C05C3B1CE00549058 /* ukrun */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ukrun; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE923B3605C3B1DF00549058 /* UnitKitTests.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitKitTests.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE923B3705C3B1DF00549058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE923B6D05C3B57600549058 /* UnitKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitKit.h; sourceTree = "<group>"; };
+		AE923B7005C3B62B00549058 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AE923D8505C3B90100549058 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AE923D8905C3B9EC00549058 /* UKRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UKRunner.h; sourceTree = "<group>"; };
+		AE923D8A05C3B9EC00549058 /* UKRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UKRunner.m; sourceTree = "<group>"; };
+		AEA6373D06D16EAE004DF854 /* README */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = README; path = ../README; sourceTree = "<group>"; };
+		AEBED01906AFADB000451E26 /* TestFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEBED01A06AFADB000451E26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEBED02706AFAE7800451E26 /* TestClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestClass.h; sourceTree = "<group>"; };
+		AEBED02806AFAE7800451E26 /* TestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestClass.m; sourceTree = "<group>"; };
+		AEBED04C06AFB1AB00451E26 /* UKTestFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UKTestFramework.h; sourceTree = "<group>"; };
+		AEBED04D06AFB1AC00451E26 /* UKTestFramework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UKTestFramework.m; sourceTree = "<group>"; };
+		AEBED16806B0603600451E26 /* NOTICE */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = NOTICE; path = ../NOTICE; sourceTree = "<group>"; };
+		AEBEF4B605FAF2910020FB35 /* UKTestMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UKTestMacros.h; sourceTree = "<group>"; };
+		AEBEF4B705FAF2910020FB35 /* UKTestMacros.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UKTestMacros.m; sourceTree = "<group>"; };
+		AEBEF55A05FBEFD10020FB35 /* UKTestLineNumbers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UKTestLineNumbers.h; sourceTree = "<group>"; };
+		AEBEF55B05FBEFD10020FB35 /* UKTestLineNumbers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UKTestLineNumbers.m; sourceTree = "<group>"; };
+		AEBEF56305FBF8010020FB35 /* UKTestFileNames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UKTestFileNames.h; sourceTree = "<group>"; };
+		AEBEF56405FBF8010020FB35 /* UKTestFileNames.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UKTestFileNames.m; sourceTree = "<group>"; };
+		AEEB74D006B1BEFD00BE53E8 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		AEF570CD05F6E94700FB3F0B /* UKTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UKTask.h; sourceTree = "<group>"; };
+		AEF570CE05F6E94700FB3F0B /* UKTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UKTask.m; sourceTree = "<group>"; };
+		AEFFFA67060140E50002576C /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/UKTestHandler.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		41EE77981500E0F800B43EDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41EE77C31500EFAF00B43EDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41EE77CB1500EFBD00B43EDE /* libobjc.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DC2EF560486A6940098B216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE70B65205F7100400D56367 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE70B66B05F71D8B00D56367 /* UnitKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE923B2A05C3B1CE00549058 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41C25D7A14AA2A55000C7CCA /* UnitKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE923B3405C3B1DF00549058 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEBED01706AFADB000451E26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41DB4B9B146C0423003DE495 /* UnitKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5B0486A6940098B216 /* UnitKit.framework */,
+				AE923B2C05C3B1CE00549058 /* ukrun */,
+				AE923B3605C3B1DF00549058 /* UnitKitTests.bundle */,
+				AE70B65405F7100400D56367 /* UKTestBundleOne.bundle */,
+				AEBED01906AFADB000451E26 /* TestFramework.framework */,
+				41EE779A1500E0F800B43EDE /* libunit_c_kit.dylib */,
+				41EE77C51500EFAF00B43EDE /* libunit_objc_kit.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* UnitKit */ = {
+			isa = PBXGroup;
+			children = (
+				AEA6373D06D16EAE004DF854 /* README */,
+				AEEB74D006B1BEFD00BE53E8 /* LICENSE */,
+				AEBED16806B0603600451E26 /* NOTICE */,
+				AE923A0F05C3B11600549058 /* FrameworkSource */,
+				41EE77A91500E10200B43EDE /* SharedLibrarySource */,
+				AE923B5B05C3B3A900549058 /* ToolSource */,
+				AE923B4E05C3B33400549058 /* UnitKitTests */,
+				AE70B65E05F71D3900D56367 /* TestBundle */,
+				AEBED01E06AFADBE00451E26 /* TestFramework */,
+				AE8CCDFB0680B4C1008CA594 /* Xcode Integration */,
+				41D32B5D14B47BDA00731C06 /* GNUstep */,
+				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				034768DFFF38A50411DB9C8B /* Products */,
+				41EE77CA1500EFBD00B43EDE /* libobjc.dylib */,
+			);
+			name = UnitKit;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				AE55498A06C5ACDC005FF2F3 /* Foundation.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		41D32B5D14B47BDA00731C06 /* GNUstep */ = {
+			isa = PBXGroup;
+			children = (
+				41D32B5414B47BD600731C06 /* GNUmakefile */,
+			);
+			name = GNUstep;
+			sourceTree = "<group>";
+		};
+		41DB494E146BE7CC003DE495 /* File Templates */ = {
+			isa = PBXGroup;
+			children = (
+				41DB4947146BE7C0003DE495 /* UnitKit */,
+			);
+			name = "File Templates";
+			sourceTree = "<group>";
+		};
+		41DB4953146BE7E8003DE495 /* Target Templates */ = {
+			isa = PBXGroup;
+			children = (
+				41DB494F146BE7E4003DE495 /* UnitKit */,
+			);
+			name = "Target Templates";
+			sourceTree = "<group>";
+		};
+		41EE77A91500E10200B43EDE /* SharedLibrarySource */ = {
+			isa = PBXGroup;
+			children = (
+				41EE77AB1500E13A00B43EDE /* uk_handler.h */,
+				41EE77AC1500E13A00B43EDE /* uk_handler.c */,
+				41EE77B11500E71C00B43EDE /* uk_handler_plain_c.c */,
+				41EE77B41500E73500B43EDE /* uk_handler_objc.c */,
+			);
+			path = SharedLibrarySource;
+			sourceTree = "<group>";
+		};
+		AE70B65E05F71D3900D56367 /* TestBundle */ = {
+			isa = PBXGroup;
+			children = (
+				AE70B66405F71D5500D56367 /* TestOne.h */,
+				AE70B66505F71D5500D56367 /* TestOne.m */,
+				AE70B72305F73A1F00D56367 /* TestTwo.h */,
+				AE70B72405F73A1F00D56367 /* TestTwo.m */,
+				AE70B72905F73A3F00D56367 /* TestThree.h */,
+				AE70B72A05F73A3F00D56367 /* TestThree.m */,
+				AE70B65505F7100400D56367 /* Info.plist */,
+			);
+			name = TestBundle;
+			path = TestSource/TestBundle;
+			sourceTree = "<group>";
+		};
+		AE8CCDFB0680B4C1008CA594 /* Xcode Integration */ = {
+			isa = PBXGroup;
+			children = (
+				41072532150E33A600C7A633 /* uninstall */,
+				41DB4953146BE7E8003DE495 /* Target Templates */,
+				41DB494E146BE7CC003DE495 /* File Templates */,
+			);
+			name = "Xcode Integration";
+			sourceTree = "<group>";
+		};
+		AE923A0F05C3B11600549058 /* FrameworkSource */ = {
+			isa = PBXGroup;
+			children = (
+				41DB4966146BE989003DE495 /* UnitKitParentIncludes.h */,
+				41DB496C146BE9CE003DE495 /* _UnitKitParentIncludes.h */,
+				AE923B6D05C3B57600549058 /* UnitKit.h */,
+				AE73F21F05F1573200CAFD4D /* UKTest.h */,
+				AE613E6705F181AE009B020F /* UKTestHandler.h */,
+				AE613E6805F181AE009B020F /* UKTestHandler.m */,
+				AEFFFA70060140EB0002576C /* UKTestHandler.strings */,
+				AE923D8905C3B9EC00549058 /* UKRunner.h */,
+				AE923D8A05C3B9EC00549058 /* UKRunner.m */,
+				AE41F3D106812A3F0044760C /* UKRunner.strings */,
+				AEF570CD05F6E94700FB3F0B /* UKTask.h */,
+				AEF570CE05F6E94700FB3F0B /* UKTask.m */,
+				32DBCF5E0370ADEE00C91783 /* Info.plist */,
+				AE923B6F05C3B62B00549058 /* InfoPlist.strings */,
+			);
+			path = FrameworkSource;
+			sourceTree = "<group>";
+		};
+		AE923B4E05C3B33400549058 /* UnitKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				AE923B3705C3B1DF00549058 /* Info.plist */,
+				AE702CC905FED1060049C79F /* UKRunnerTests.h */,
+				AE702CCA05FED1060049C79F /* UKRunnerTests.m */,
+				AEBEF4B605FAF2910020FB35 /* UKTestMacros.h */,
+				AEBEF4B705FAF2910020FB35 /* UKTestMacros.m */,
+				AEBEF55A05FBEFD10020FB35 /* UKTestLineNumbers.h */,
+				AEBEF55B05FBEFD10020FB35 /* UKTestLineNumbers.m */,
+				AEBEF56305FBF8010020FB35 /* UKTestFileNames.h */,
+				AEBEF56405FBF8010020FB35 /* UKTestFileNames.m */,
+				AE702C3705FEC7920049C79F /* UKTestMessages.h */,
+				AE702C3805FEC7920049C79F /* UKTestMessages.m */,
+				AE39C80605FBFF7F0011F066 /* UKTaskTests.h */,
+				AE39C80705FBFF7F0011F066 /* UKTaskTests.m */,
+				AEBED04C06AFB1AB00451E26 /* UKTestFramework.h */,
+				AEBED04D06AFB1AC00451E26 /* UKTestFramework.m */,
+			);
+			name = UnitKitTests;
+			path = TestSource/UnitKitTests;
+			sourceTree = "<group>";
+		};
+		AE923B5B05C3B3A900549058 /* ToolSource */ = {
+			isa = PBXGroup;
+			children = (
+				41D32BF714B495BC00731C06 /* ukrun.1 */,
+				AE923D8505C3B90100549058 /* main.m */,
+			);
+			path = ToolSource;
+			sourceTree = "<group>";
+		};
+		AEBED01E06AFADBE00451E26 /* TestFramework */ = {
+			isa = PBXGroup;
+			children = (
+				AEBED02706AFAE7800451E26 /* TestClass.h */,
+				AEBED02806AFAE7800451E26 /* TestClass.m */,
+				AEBED01A06AFADB000451E26 /* Info.plist */,
+			);
+			name = TestFramework;
+			path = TestSource/TestFramework;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		41EE77961500E0F800B43EDE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41EE78FA15011E2600B43EDE /* UnitKit.h in Headers */,
+				4162DB9C15122C6900B76681 /* UKTestHandler.h in Headers */,
+				4162DBA915122CB100B76681 /* UnitKitParentIncludes.h in Headers */,
+				41EE77D11500F02F00B43EDE /* UKTest.h in Headers */,
+				41EE77AD1500E13A00B43EDE /* uk_handler.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41EE77C11500EFAF00B43EDE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41EE78F915011E2200B43EDE /* UnitKit.h in Headers */,
+				41EE77D01500F02700B43EDE /* UKTest.h in Headers */,
+				4162DB9D15122C6F00B76681 /* UKTestHandler.h in Headers */,
+				4162DBAA15122CB700B76681 /* UnitKitParentIncludes.h in Headers */,
+				41EE77CF1500F01500B43EDE /* uk_handler.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DC2EF500486A6940098B216 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE923B6E05C3B57600549058 /* UnitKit.h in Headers */,
+				AE923D8B05C3B9EC00549058 /* UKRunner.h in Headers */,
+				AE73F22105F1573200CAFD4D /* UKTest.h in Headers */,
+				AE613E6905F181AE009B020F /* UKTestHandler.h in Headers */,
+				41DB4967146BE989003DE495 /* UnitKitParentIncludes.h in Headers */,
+				41DB4970146BE9CE003DE495 /* _UnitKitParentIncludes.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEBED01406AFADB000451E26 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEBED02906AFAE7800451E26 /* TestClass.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		41EE77991500E0F800B43EDE /* unit_c_kit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41EE77AA1500E10200B43EDE /* Build configuration list for PBXNativeTarget "unit_c_kit" */;
+			buildPhases = (
+				41EE77961500E0F800B43EDE /* Headers */,
+				41EE77971500E0F800B43EDE /* Sources */,
+				41EE77981500E0F800B43EDE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = unit_c_kit;
+			productName = unit_c_kit;
+			productReference = 41EE779A1500E0F800B43EDE /* libunit_c_kit.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		41EE77C41500EFAF00B43EDE /* unit_objc_kit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41EE77CC1500EFBE00B43EDE /* Build configuration list for PBXNativeTarget "unit_objc_kit" */;
+			buildPhases = (
+				41EE77C11500EFAF00B43EDE /* Headers */,
+				41EE77C21500EFAF00B43EDE /* Sources */,
+				41EE77C31500EFAF00B43EDE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = unit_objc_kit;
+			productName = unit_objc_kit;
+			productReference = 41EE77C51500EFAF00B43EDE /* libunit_objc_kit.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		8DC2EF4F0486A6940098B216 /* UnitKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 417EBCBB08C5FB43001B041E /* Build configuration list for PBXNativeTarget "UnitKit" */;
+			buildPhases = (
+				8DC2EF500486A6940098B216 /* Headers */,
+				8DC2EF520486A6940098B216 /* Resources */,
+				8DC2EF540486A6940098B216 /* Sources */,
+				8DC2EF560486A6940098B216 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnitKit;
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = UnitKit;
+			productReference = 8DC2EF5B0486A6940098B216 /* UnitKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AE70B65305F7100400D56367 /* TestBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 417EBCC708C5FB43001B041E /* Build configuration list for PBXNativeTarget "TestBundle" */;
+			buildPhases = (
+				AE70B65005F7100400D56367 /* Sources */,
+				AE70B65205F7100400D56367 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			comments = "This Bundle always is installed.";
+			dependencies = (
+				AE70B65705F7100E00D56367 /* PBXTargetDependency */,
+			);
+			name = TestBundle;
+			productName = UKTestBundle1;
+			productReference = AE70B65405F7100400D56367 /* UKTestBundleOne.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		AE923B2B05C3B1CE00549058 /* ukrun */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 417EBCC308C5FB43001B041E /* Build configuration list for PBXNativeTarget "ukrun" */;
+			buildPhases = (
+				AE923B2905C3B1CE00549058 /* Sources */,
+				AE923B2A05C3B1CE00549058 /* Frameworks */,
+				41D32BF814B495BC00731C06 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE923B3905C3B1E900549058 /* PBXTargetDependency */,
+			);
+			name = ukrun;
+			productName = ukrun;
+			productReference = AE923B2C05C3B1CE00549058 /* ukrun */;
+			productType = "com.apple.product-type.tool";
+		};
+		AE923B3505C3B1DF00549058 /* UnitKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 417EBCCF08C5FB43001B041E /* Build configuration list for PBXNativeTarget "UnitKitTests" */;
+			buildPhases = (
+				41DB49CA146BF1CB003DE495 /* Copy Frameworks */,
+				AE923B3105C3B1DF00549058 /* Resources */,
+				AE923B3205C3B1DF00549058 /* Sources */,
+				AE923B3405C3B1DF00549058 /* Frameworks */,
+				AE43DAFC05C4DC7C00B9DFA5 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE923B3B05C3B1ED00549058 /* PBXTargetDependency */,
+				AE923B3D05C3B1F300549058 /* PBXTargetDependency */,
+				AE70B65D05F7101600D56367 /* PBXTargetDependency */,
+				AEBED02C06AFAE9E00451E26 /* PBXTargetDependency */,
+			);
+			name = UnitKitTests;
+			productName = UnitKitTests;
+			productReference = AE923B3605C3B1DF00549058 /* UnitKitTests.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		AEBED01806AFADB000451E26 /* TestFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 417EBCCB08C5FB43001B041E /* Build configuration list for PBXNativeTarget "TestFramework" */;
+			buildPhases = (
+				AEBED01406AFADB000451E26 /* Headers */,
+				AEBED01606AFADB000451E26 /* Sources */,
+				AEBED01706AFADB000451E26 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestFramework;
+			productName = TestEmbeddedFramework;
+			productReference = AEBED01906AFADB000451E26 /* TestFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 417EBCD308C5FB43001B041E /* Build configuration list for PBXProject "UnitKit" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* UnitKit */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				41DB49DA146BF286003DE495 /* UnitKit-Install */,
+				8DC2EF4F0486A6940098B216 /* UnitKit */,
+				AE923B2B05C3B1CE00549058 /* ukrun */,
+				AE923B3505C3B1DF00549058 /* UnitKitTests */,
+				AE70B65305F7100400D56367 /* TestBundle */,
+				AEBED01806AFADB000451E26 /* TestFramework */,
+				AE8CCFC30680B7D4008CA594 /* Xcode Integration */,
+				41EE77991500E0F800B43EDE /* unit_c_kit */,
+				41EE77C41500EFAF00B43EDE /* unit_objc_kit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8DC2EF520486A6940098B216 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE923B7105C3B62B00549058 /* InfoPlist.strings in Resources */,
+				AEFFFA71060140EB0002576C /* UKTestHandler.strings in Resources */,
+				AE41F3D206812A3F0044760C /* UKRunner.strings in Resources */,
+				AEBED16906B0603600451E26 /* NOTICE in Resources */,
+				41DB4C33146C1A3C003DE495 /* README in Resources */,
+				AEEB74D106B1BEFD00BE53E8 /* LICENSE in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE923B3105C3B1DF00549058 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41DB49BA146BF077003DE495 /* UKTestBundleOne.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		41DB4A02146BF4D4003DE495 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Copying to $TEMPLATE_DIRECTORY\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE43DAFC05C4DC7C00B9DFA5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "# export the build dir as the framework path and point\n# at the currently built ukrun so that we test out just\n# what's being built here and not an already installed\n# copy\nexport DYLD_FRAMEWORK_PATH=$LIBRARY_SEARCH_PATHS\n\"$BUILT_PRODUCTS_DIR\"/ukrun -v -q -r -e -E \"$BUILT_PRODUCTS_DIR/$PRODUCT_NAME.$WRAPPER_EXTENSION\"";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41EE77971500E0F800B43EDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41EE77AE1500E13A00B43EDE /* uk_handler.c in Sources */,
+				41EE77B21500E71C00B43EDE /* uk_handler_plain_c.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41EE77C21500EFAF00B43EDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41EE77CE1500F00B00B43EDE /* uk_handler.c in Sources */,
+				41EE77CD1500F00A00B43EDE /* uk_handler_objc.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DC2EF540486A6940098B216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE923D8C05C3B9EC00549058 /* UKRunner.m in Sources */,
+				AE613E6A05F181AE009B020F /* UKTestHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE70B65005F7100400D56367 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE70B66705F71D5500D56367 /* TestOne.m in Sources */,
+				AE70B72605F73A1F00D56367 /* TestTwo.m in Sources */,
+				AE70B72C05F73A3F00D56367 /* TestThree.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE923B2905C3B1CE00549058 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE923D8605C3B90100549058 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE923B3205C3B1DF00549058 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEBEF4B905FAF2910020FB35 /* UKTestMacros.m in Sources */,
+				AEBEF55D05FBEFD10020FB35 /* UKTestLineNumbers.m in Sources */,
+				AEBEF56605FBF8010020FB35 /* UKTestFileNames.m in Sources */,
+				AE702C3A05FEC7920049C79F /* UKTestMessages.m in Sources */,
+				AE702CCC05FED1060049C79F /* UKRunnerTests.m in Sources */,
+				AEBED0E306B058A100451E26 /* UKTestFramework.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEBED01606AFADB000451E26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEBED02A06AFAE7800451E26 /* TestClass.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		41DB49DF146BF2BE003DE495 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DC2EF4F0486A6940098B216 /* UnitKit */;
+			targetProxy = 41DB49DE146BF2BE003DE495 /* PBXContainerItemProxy */;
+		};
+		41DB49E1146BF2C1003DE495 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE923B2B05C3B1CE00549058 /* ukrun */;
+			targetProxy = 41DB49E0146BF2C1003DE495 /* PBXContainerItemProxy */;
+		};
+		41DB49E5146BF2ED003DE495 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE8CCFC30680B7D4008CA594 /* Xcode Integration */;
+			targetProxy = 41DB49E4146BF2ED003DE495 /* PBXContainerItemProxy */;
+		};
+		41EE77D31500F08A00B43EDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41EE77991500E0F800B43EDE /* unit_c_kit */;
+			targetProxy = 41EE77D21500F08A00B43EDE /* PBXContainerItemProxy */;
+		};
+		41EE77D51500F08C00B43EDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41EE77C41500EFAF00B43EDE /* unit_objc_kit */;
+			targetProxy = 41EE77D41500F08C00B43EDE /* PBXContainerItemProxy */;
+		};
+		AE70B65705F7100E00D56367 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DC2EF4F0486A6940098B216 /* UnitKit */;
+			targetProxy = AE70B65605F7100E00D56367 /* PBXContainerItemProxy */;
+		};
+		AE70B65D05F7101600D56367 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE70B65305F7100400D56367 /* TestBundle */;
+			targetProxy = AE70B65C05F7101600D56367 /* PBXContainerItemProxy */;
+		};
+		AE923B3905C3B1E900549058 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DC2EF4F0486A6940098B216 /* UnitKit */;
+			targetProxy = AE923B3805C3B1E900549058 /* PBXContainerItemProxy */;
+		};
+		AE923B3B05C3B1ED00549058 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DC2EF4F0486A6940098B216 /* UnitKit */;
+			targetProxy = AE923B3A05C3B1ED00549058 /* PBXContainerItemProxy */;
+		};
+		AE923B3D05C3B1F300549058 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE923B2B05C3B1CE00549058 /* ukrun */;
+			targetProxy = AE923B3C05C3B1F300549058 /* PBXContainerItemProxy */;
+		};
+		AEBED02C06AFAE9E00451E26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AEBED01806AFADB000451E26 /* TestFramework */;
+			targetProxy = AEBED02B06AFAE9E00451E26 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AE41F3D106812A3F0044760C /* UKRunner.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE41F3CF06812A310044760C /* English */,
+			);
+			name = UKRunner.strings;
+			sourceTree = "<group>";
+		};
+		AE923B6F05C3B62B00549058 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE923B7005C3B62B00549058 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AEFFFA70060140EB0002576C /* UKTestHandler.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEFFFA67060140E50002576C /* English */,
+			);
+			name = UKTestHandler.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		417EBCBC08C5FB43001B041E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMMON_PRODUCT_NAME = UnitKit;
+				DYLIB_COMPATIBILITY_VERSION = 1.0.0;
+				INFOPLIST_FILE = FrameworkSource/Info.plist;
+				INSTALL_PATH_DARWIN = /Library/Frameworks;
+				INSTALL_PATH_LINUX = /usr/local/lib;
+				OTHER_LDFLAGS_DARWIN = "-framework $(FOUNDATION_FRAMEWORK_NAME) -sub_umbrella $(FOUNDATION_FRAMEWORK_NAME)";
+				OTHER_LDFLAGS_LINUX = "-lMulleFoundation";
+				PRIVATE_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/PrivateHeaders";
+				PRODUCT_NAME = "$(FRAMEWORK_PREFIX)UnitKit";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
+			};
+			name = Debug;
+		};
+		417EBCBD08C5FB43001B041E /* Install-10.5+ */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMMON_PRODUCT_NAME = UnitKit;
+				DYLIB_COMPATIBILITY_VERSION = 1.0.0;
+				INFOPLIST_FILE = FrameworkSource/Info.plist;
+				INSTALL_PATH_DARWIN = /Library/Frameworks;
+				INSTALL_PATH_LINUX = /usr/local/lib;
+				OTHER_LDFLAGS_DARWIN = "-framework $(FOUNDATION_FRAMEWORK_NAME) -sub_umbrella $(FOUNDATION_FRAMEWORK_NAME)";
+				OTHER_LDFLAGS_LINUX = "-lMulleFoundation";
+				PRIVATE_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/PrivateHeaders";
+				PRODUCT_NAME = "$(FRAMEWORK_PREFIX)UnitKit";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
+				SKIP_INSTALL = NO;
+			};
+			name = "Install-10.5+";
+		};
+		417EBCC008C5FB43001B041E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "Xcode Integration";
+				TEMPLATE_DIRECTORY = "$(DSTROOT)Library/Application\\ Support/Developer/Shared/Xcode/";
+			};
+			name = Debug;
+		};
+		417EBCC108C5FB43001B041E /* Install-10.5+ */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "Xcode Integration";
+				TEMPLATE_DIRECTORY = "$(DSTROOT)Library/Application Support/Developer/Shared/Xcode";
+			};
+			name = "Install-10.5+";
+		};
+		417EBCC408C5FB43001B041E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1.0.0;
+				INSTALL_PATH_DARWIN = /usr/local/bin;
+				INSTALL_PATH_LINUX = /usr/local/bin;
+				OTHER_LDFLAGS_LINUX = "-ldl";
+				PRODUCT_NAME = "$(TOOL_PREFIX)ukrun";
+			};
+			name = Debug;
+		};
+		417EBCC508C5FB43001B041E /* Install-10.5+ */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1.0.0;
+				INSTALL_PATH_DARWIN = /usr/local/bin;
+				INSTALL_PATH_LINUX = /usr/local/bin;
+				OTHER_LDFLAGS_LINUX = "-ldl";
+				PRODUCT_NAME = ukrun;
+				SKIP_INSTALL = NO;
+			};
+			name = "Install-10.5+";
+		};
+		417EBCC808C5FB43001B041E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 0.0.0;
+				INFOPLIST_FILE = TestSource/TestBundle/Info.plist;
+				PRODUCT_NAME = UKTestBundleOne;
+			};
+			name = Debug;
+		};
+		417EBCC908C5FB43001B041E /* Install-10.5+ */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 0.0.0;
+				INFOPLIST_FILE = TestSource/TestBundle/Info.plist;
+				PRODUCT_NAME = UKTestBundleOne;
+			};
+			name = "Install-10.5+";
+		};
+		417EBCCC08C5FB43001B041E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEPLOYMENT_LOCATION = NO;
+				DYLIB_COMPATIBILITY_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				INFOPLIST_FILE = TestSource/TestFramework/Info.plist;
+				INSTALL_PATH_DARWIN = "@loader_path/../Frameworks";
+				PRODUCT_NAME = TestFramework;
+			};
+			name = Debug;
+		};
+		417EBCCD08C5FB43001B041E /* Install-10.5+ */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEPLOYMENT_LOCATION = NO;
+				DYLIB_COMPATIBILITY_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				INFOPLIST_FILE = TestSource/TestFramework/Info.plist;
+				INSTALL_PATH_DARWIN = "@loader_path/../Frameworks";
+				PRODUCT_NAME = TestFramework;
+			};
+			name = "Install-10.5+";
+		};
+		417EBCD008C5FB43001B041E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEPLOYMENT_LOCATION = NO;
+				INFOPLIST_FILE = TestSource/UnitKitTests/Info.plist;
+				OTHER_LDFLAGS_DARWIN = "-framework UnitKit -framework TestFramework";
+				OTHER_LDFLAGS_LINUX = "-lUnitKit -L. -lTestFramework";
+				PRODUCT_NAME = UnitKitTests;
+			};
+			name = Debug;
+		};
+		417EBCD108C5FB43001B041E /* Install-10.5+ */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEPLOYMENT_LOCATION = NO;
+				INFOPLIST_FILE = TestSource/UnitKitTests/Info.plist;
+				OTHER_LDFLAGS_DARWIN = "-framework UnitKit -framework TestFramework";
+				OTHER_LDFLAGS_LINUX = "-lUnitKit -L. -lTestFramework";
+				PRODUCT_NAME = UnitKitTests;
+			};
+			name = "Install-10.5+";
+		};
+		417EBCD408C5FB43001B041E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1.5;
+				DYLIB_COMPATIBILITY_VERSION = 1.5;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				FOUNDATION_FRAMEWORK_NAME = Foundation;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					DEBUG,
+				);
+				HEADER_PATH_DARWIN = "$(INSTALL_PREFIX_DARWIN)/include/$(PRODUCT_NAME)";
+				HEADER_PATH_LINUX = "$(INSTALL_PREFIX_LINUX)/include/$(PRODUCT_NAME)";
+				HEADER_PATH_PLATFORM = "$(HEADER_PATH_DARWIN)";
+				INSTALL_PATH = "$(INSTALL_PATH_PLATFORM)";
+				INSTALL_PATH_DARWIN = "$(INSTALL_PREFIX_DARWIN)/bin";
+				INSTALL_PATH_LINUX = "$(INSTALL_PREFIX_LINUX)/bin";
+				INSTALL_PATH_PLATFORM = "$(INSTALL_PATH_DARWIN)";
+				INSTALL_PREFIX_DARWIN = /usr/local;
+				INSTALL_PREFIX_LINUX = /usr/local;
+				INSTALL_PREFIX_PLATFORM = "$(INSTALL_PREFIX_DARWIN)";
+				OTHER_CFLAGS = (
+					"$(OTHER_CFLAGS_QUOTED_FOR_PROJECT_1)",
+					"$(OTHER_CFLAGS_PLATFORM)",
+					"$(inherited)",
+				);
+				OTHER_CFLAGS_LINUX = "";
+				OTHER_CFLAGS_PLATFORM = "$(OTHER_CFLAGS_DARWIN)";
+				OTHER_CFLAGS_QUOTED_FOR_PROJECT_1 = "-DUNITKIT_VERSION=\\\"$(CURRENT_PROJECT_VERSION)\\\"";
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS_PLATFORM)",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS_PLATFORM = "$(OTHER_LDFLAGS_DARWIN)";
+				OTHER_OBJCFLAGS_LINUX = "-fconstant-string-class=NSConstantString";
+				PRIVATE_HEADERS_FOLDER_PATH = "$(HEADER_PATH_PLATFORM)/private";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(HEADER_PATH_PLATFORM)";
+			};
+			name = Debug;
+		};
+		417EBCD508C5FB43001B041E /* Install-10.5+ */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					"$(ARCHS_STANDARD_32_64_BIT)",
+				);
+				CURRENT_PROJECT_VERSION = 1.5.1;
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DSTROOT = /;
+				DYLIB_COMPATIBILITY_VERSION = 1.5.1;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				FOUNDATION_FRAMEWORK_NAME = Foundation;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					NDEBUG,
+					NS_BLOCK_ASSERTIONS,
+					"$(inherited)",
+				);
+				HEADER_PATH_DARWIN = "$(INSTALL_PREFIX_DARWIN)/include/$(PRODUCT_NAME)";
+				HEADER_PATH_LINUX = "$(INSTALL_PREFIX_LINUX)/include/$(PRODUCT_NAME)";
+				HEADER_PATH_PLATFORM = "$(HEADER_PATH_DARWIN)";
+				INSTALL_PATH = "$(INSTALL_PATH_PLATFORM)";
+				INSTALL_PATH_DARWIN = "$(INSTALL_PREFIX_DARWIN)/bin";
+				INSTALL_PATH_LINUX = "$(INSTALL_PREFIX_LINUX)/bin";
+				INSTALL_PATH_PLATFORM = "$(INSTALL_PATH_DARWIN)";
+				INSTALL_PREFIX_DARWIN = /usr/local;
+				INSTALL_PREFIX_LINUX = /usr/local;
+				INSTALL_PREFIX_PLATFORM = "$(INSTALL_PREFIX_DARWIN)";
+				OTHER_CFLAGS = (
+					"$(OTHER_CFLAGS_QUOTED_FOR_PROJECT_1)",
+					"$(OTHER_CFLAGS_PLATFORM)",
+					"$(inherited)",
+				);
+				OTHER_CFLAGS_LINUX = "";
+				OTHER_CFLAGS_PLATFORM = "$(OTHER_CFLAGS_DARWIN)";
+				OTHER_CFLAGS_QUOTED_FOR_PROJECT_1 = "-DUNITKIT_VERSION=\\\"$(CURRENT_PROJECT_VERSION)\\\"";
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS_PLATFORM)",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS_PLATFORM = "$(OTHER_LDFLAGS_DARWIN)";
+				OTHER_OBJCFLAGS_LINUX = "-fconstant-string-class=NSConstantString";
+				PRIVATE_HEADERS_FOLDER_PATH = "$(HEADER_PATH_PLATFORM)/private";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(HEADER_PATH_PLATFORM)";
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+				SEPARATE_STRIP = YES;
+			};
+			name = "Install-10.5+";
+		};
+		41DB4995146BEC04003DE495 /* Install Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1.5.1;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /;
+				DYLIB_COMPATIBILITY_VERSION = 1.5.1;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				FOUNDATION_FRAMEWORK_NAME = Foundation;
+				GCC_DEBUGGING_SYMBOLS = full;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					DEBUG,
+				);
+				HEADER_PATH_DARWIN = "$(INSTALL_PREFIX_DARWIN)/include/$(PRODUCT_NAME)";
+				HEADER_PATH_LINUX = "$(INSTALL_PREFIX_LINUX)/include/$(PRODUCT_NAME)";
+				HEADER_PATH_PLATFORM = "$(HEADER_PATH_DARWIN)";
+				INSTALL_PATH = "$(INSTALL_PATH_PLATFORM)";
+				INSTALL_PATH_DARWIN = "$(INSTALL_PREFIX_DARWIN)/bin";
+				INSTALL_PATH_LINUX = "$(INSTALL_PREFIX_LINUX)/bin";
+				INSTALL_PATH_PLATFORM = "$(INSTALL_PATH_DARWIN)";
+				INSTALL_PREFIX_DARWIN = /usr/local;
+				INSTALL_PREFIX_LINUX = /usr/local;
+				INSTALL_PREFIX_PLATFORM = "$(INSTALL_PREFIX_DARWIN)";
+				OTHER_CFLAGS = (
+					"$(OTHER_CFLAGS_QUOTED_FOR_PROJECT_1)",
+					"$(OTHER_CFLAGS_PLATFORM)",
+					"$(inherited)",
+				);
+				OTHER_CFLAGS_LINUX = "";
+				OTHER_CFLAGS_PLATFORM = "$(OTHER_CFLAGS_DARWIN)";
+				OTHER_CFLAGS_QUOTED_FOR_PROJECT_1 = "-DUNITKIT_VERSION=\\\"$(CURRENT_PROJECT_VERSION)\\\"";
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS_PLATFORM)",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS_PLATFORM = "$(OTHER_LDFLAGS_DARWIN)";
+				OTHER_OBJCFLAGS_LINUX = "-fconstant-string-class=NSConstantString";
+				PRIVATE_HEADERS_FOLDER_PATH = "$(HEADER_PATH_PLATFORM)/private";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(HEADER_PATH_PLATFORM)";
+				SKIP_INSTALL = NO;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = "Install Debug";
+		};
+		41DB4996146BEC04003DE495 /* Install Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMMON_PRODUCT_NAME = UnitKit;
+				DYLIB_COMPATIBILITY_VERSION = 1.0.0;
+				INFOPLIST_FILE = FrameworkSource/Info.plist;
+				INSTALL_PATH_DARWIN = /Library/Frameworks;
+				INSTALL_PATH_LINUX = /usr/local/lib;
+				OTHER_LDFLAGS_DARWIN = "-framework $(FOUNDATION_FRAMEWORK_NAME) -sub_umbrella $(FOUNDATION_FRAMEWORK_NAME)";
+				OTHER_LDFLAGS_LINUX = "-lMulleFoundation";
+				PRIVATE_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/PrivateHeaders";
+				PRODUCT_NAME = "$(FRAMEWORK_PREFIX)UnitKit";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
+				SKIP_INSTALL = NO;
+			};
+			name = "Install Debug";
+		};
+		41DB4997146BEC04003DE495 /* Install Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1.0.0;
+				INSTALL_PATH_DARWIN = /usr/local/bin;
+				INSTALL_PATH_LINUX = /usr/local/bin;
+				OTHER_LDFLAGS_LINUX = "-ldl";
+				PRODUCT_NAME = ukrun;
+				SKIP_INSTALL = NO;
+			};
+			name = "Install Debug";
+		};
+		41DB4998146BEC04003DE495 /* Install Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEPLOYMENT_LOCATION = NO;
+				INFOPLIST_FILE = TestSource/UnitKitTests/Info.plist;
+				OTHER_LDFLAGS_DARWIN = "-framework UnitKit -framework TestFramework";
+				OTHER_LDFLAGS_LINUX = "-lUnitKit -L. -lTestFramework";
+				PRODUCT_NAME = UnitKitTests;
+			};
+			name = "Install Debug";
+		};
+		41DB4999146BEC04003DE495 /* Install Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 0.0.0;
+				INFOPLIST_FILE = TestSource/TestBundle/Info.plist;
+				PRODUCT_NAME = UKTestBundleOne;
+			};
+			name = "Install Debug";
+		};
+		41DB499A146BEC04003DE495 /* Install Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEPLOYMENT_LOCATION = NO;
+				DYLIB_COMPATIBILITY_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				INFOPLIST_FILE = TestSource/TestFramework/Info.plist;
+				INSTALL_PATH_DARWIN = "@loader_path/../Frameworks";
+				PRODUCT_NAME = TestFramework;
+			};
+			name = "Install Debug";
+		};
+		41DB499B146BEC04003DE495 /* Install Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "Xcode Integration";
+				TEMPLATE_DIRECTORY = "$(DSTROOT)Library/Application\\ Support/Developer/Shared/Xcode/";
+			};
+			name = "Install Debug";
+		};
+		41DB49DB146BF286003DE495 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "UnitKit-Install";
+			};
+			name = Debug;
+		};
+		41DB49DC146BF286003DE495 /* Install Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "UnitKit-Install";
+				SKIP_INSTALL = NO;
+			};
+			name = "Install Debug";
+		};
+		41DB49DD146BF286003DE495 /* Install-10.5+ */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "UnitKit-Install";
+			};
+			name = "Install-10.5+";
+		};
+		41DB4BC9146C10C9003DE495 /* Install-10.4 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				CURRENT_PROJECT_VERSION = 1.5.1;
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DSTROOT = /;
+				DYLIB_COMPATIBILITY_VERSION = 1.5.1;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				FOUNDATION_FRAMEWORK_NAME = Foundation;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					NDEBUG,
+					NS_BLOCK_ASSERTIONS,
+					"$(inherited)",
+				);
+				GCC_VERSION = 4.0;
+				HEADER_PATH_DARWIN = "$(INSTALL_PREFIX_DARWIN)/include/$(PRODUCT_NAME)";
+				HEADER_PATH_LINUX = "$(INSTALL_PREFIX_LINUX)/include/$(PRODUCT_NAME)";
+				HEADER_PATH_PLATFORM = "$(HEADER_PATH_DARWIN)";
+				INSTALL_PATH = "$(INSTALL_PATH_PLATFORM)";
+				INSTALL_PATH_DARWIN = "$(INSTALL_PREFIX_DARWIN)/bin";
+				INSTALL_PATH_LINUX = "$(INSTALL_PREFIX_LINUX)/bin";
+				INSTALL_PATH_PLATFORM = "$(INSTALL_PATH_DARWIN)";
+				INSTALL_PREFIX_DARWIN = /usr/local;
+				INSTALL_PREFIX_LINUX = /usr/local;
+				INSTALL_PREFIX_PLATFORM = "$(INSTALL_PREFIX_DARWIN)";
+				OTHER_CFLAGS = (
+					"$(OTHER_CFLAGS_QUOTED_FOR_PROJECT_1)",
+					"$(OTHER_CFLAGS_PLATFORM)",
+					"$(inherited)",
+				);
+				OTHER_CFLAGS_LINUX = "";
+				OTHER_CFLAGS_PLATFORM = "$(OTHER_CFLAGS_DARWIN)";
+				OTHER_CFLAGS_QUOTED_FOR_PROJECT_1 = "-DUNITKIT_VERSION=\\\"$(CURRENT_PROJECT_VERSION)\\\"";
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS_PLATFORM)",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS_PLATFORM = "$(OTHER_LDFLAGS_DARWIN)";
+				OTHER_OBJCFLAGS_LINUX = "-fconstant-string-class=NSConstantString";
+				PRIVATE_HEADERS_FOLDER_PATH = "$(HEADER_PATH_PLATFORM)/private";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(HEADER_PATH_PLATFORM)";
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = "Install-10.4";
+		};
+		41DB4BCA146C10C9003DE495 /* Install-10.4 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "UnitKit-Install";
+			};
+			name = "Install-10.4";
+		};
+		41DB4BCB146C10C9003DE495 /* Install-10.4 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMMON_PRODUCT_NAME = UnitKit;
+				DYLIB_COMPATIBILITY_VERSION = 1.0.0;
+				INFOPLIST_FILE = FrameworkSource/Info.plist;
+				INSTALL_PATH_DARWIN = /Library/Frameworks;
+				INSTALL_PATH_LINUX = /usr/local/lib;
+				OTHER_LDFLAGS_DARWIN = "-framework $(FOUNDATION_FRAMEWORK_NAME) -sub_umbrella $(FOUNDATION_FRAMEWORK_NAME)";
+				OTHER_LDFLAGS_LINUX = "-lMulleFoundation";
+				PRIVATE_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/PrivateHeaders";
+				PRODUCT_NAME = "$(FRAMEWORK_PREFIX)UnitKit";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
+				SKIP_INSTALL = NO;
+			};
+			name = "Install-10.4";
+		};
+		41DB4BCC146C10C9003DE495 /* Install-10.4 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1.0.0;
+				INSTALL_PATH_DARWIN = /usr/local/bin;
+				INSTALL_PATH_LINUX = /usr/local/bin;
+				OTHER_LDFLAGS_LINUX = "-ldl";
+				PRODUCT_NAME = ukrun;
+				SKIP_INSTALL = NO;
+			};
+			name = "Install-10.4";
+		};
+		41DB4BCD146C10C9003DE495 /* Install-10.4 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEPLOYMENT_LOCATION = NO;
+				INFOPLIST_FILE = TestSource/UnitKitTests/Info.plist;
+				OTHER_LDFLAGS_DARWIN = "-framework UnitKit -framework TestFramework";
+				OTHER_LDFLAGS_LINUX = "-lUnitKit -L. -lTestFramework";
+				PRODUCT_NAME = UnitKitTests;
+			};
+			name = "Install-10.4";
+		};
+		41DB4BCE146C10C9003DE495 /* Install-10.4 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 0.0.0;
+				INFOPLIST_FILE = TestSource/TestBundle/Info.plist;
+				PRODUCT_NAME = UKTestBundleOne;
+			};
+			name = "Install-10.4";
+		};
+		41DB4BCF146C10C9003DE495 /* Install-10.4 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEPLOYMENT_LOCATION = NO;
+				DYLIB_COMPATIBILITY_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				INFOPLIST_FILE = TestSource/TestFramework/Info.plist;
+				INSTALL_PATH_DARWIN = "@loader_path/../Frameworks";
+				PRODUCT_NAME = TestFramework;
+			};
+			name = "Install-10.4";
+		};
+		41DB4BD0146C10C9003DE495 /* Install-10.4 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "Xcode Integration";
+				TEMPLATE_DIRECTORY = "$(DSTROOT)Library/Application Support/Developer/Shared/Xcode";
+			};
+			name = "Install-10.4";
+		};
+		41EE779B1500E0F800B43EDE /* Install-10.5+ */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				HEADER_PATH_DARWIN = "$(INSTALL_PREFIX_DARWIN)/include/UnitKit";
+				HEADER_PATH_LINUX = "$(INSTALL_PREFIX_LINUX)/include/UnitKit";
+				INSTALL_PATH_DARWIN = "$(INSTALL_PREFIX_DARWIN)/lib";
+				INSTALL_PATH_LINUX = "$(INSTALL_PREFIX_LINUX)/lib";
+				PRIVATE_HEADERS_FOLDER_PATH = "$(HEADER_PATH_PLATFORM)";
+				PRODUCT_NAME = unit_c_kit;
+				PUBLIC_HEADERS_FOLDER_PATH = "$(HEADER_PATH_PLATFORM)/private";
+				SKIP_INSTALL = NO;
+			};
+			name = "Install-10.5+";
+		};
+		41EE779C1500E0F800B43EDE /* Install-10.4 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				HEADER_PATH_DARWIN = "$(INSTALL_PREFIX_DARWIN)/include/UnitKit";
+				HEADER_PATH_LINUX = "$(INSTALL_PREFIX_LINUX)/include/UnitKit";
+				INSTALL_PATH_DARWIN = "$(INSTALL_PREFIX_DARWIN)/lib";
+				INSTALL_PATH_LINUX = "$(INSTALL_PREFIX_LINUX)/lib";
+				PRODUCT_NAME = unit_c_kit;
+				SEPARATE_STRIP = YES;
+				SKIP_INSTALL = NO;
+			};
+			name = "Install-10.4";
+		};
+		41EE779D1500E0F800B43EDE /* Install Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				HEADER_PATH_DARWIN = "$(INSTALL_PREFIX_DARWIN)/include/UnitKit";
+				HEADER_PATH_LINUX = "$(INSTALL_PREFIX_LINUX)/include/UnitKit";
+				INSTALL_PATH_DARWIN = "$(INSTALL_PREFIX_DARWIN)/lib";
+				INSTALL_PATH_LINUX = "$(INSTALL_PREFIX_LINUX)/lib";
+				PRODUCT_NAME = unit_c_kit;
+				SKIP_INSTALL = NO;
+			};
+			name = "Install Debug";
+		};
+		41EE779E1500E0F800B43EDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_PATH_DARWIN = "$(INSTALL_PREFIX_DARWIN)/include/UnitKit";
+				HEADER_PATH_LINUX = "$(INSTALL_PREFIX_LINUX)/include/UnitKit";
+				INSTALL_PATH_DARWIN = "$(INSTALL_PREFIX_DARWIN)/lib";
+				INSTALL_PATH_LINUX = "$(INSTALL_PREFIX_LINUX)/lib";
+				PRODUCT_NAME = unit_c_kit;
+			};
+			name = Debug;
+		};
+		41EE77C61500EFAF00B43EDE /* Install-10.5+ */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				HEADER_PATH_DARWIN = "$(INSTALL_PREFIX_DARWIN)/include/UnitKit";
+				HEADER_PATH_LINUX = "$(INSTALL_PREFIX_LINUX)/include/UnitKit";
+				INSTALL_PATH_DARWIN = "$(INSTALL_PREFIX_DARWIN)/lib";
+				INSTALL_PATH_LINUX = "$(INSTALL_PREFIX_LINUX)/include/UnitKit";
+				PRODUCT_NAME = unit_objc_kit;
+				SKIP_INSTALL = NO;
+			};
+			name = "Install-10.5+";
+		};
+		41EE77C71500EFAF00B43EDE /* Install-10.4 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				HEADER_PATH_DARWIN = "$(INSTALL_PREFIX_DARWIN)/include/UnitKit";
+				HEADER_PATH_LINUX = "$(INSTALL_PREFIX_LINUX)/include/UnitKit";
+				INSTALL_PATH_DARWIN = "$(INSTALL_PREFIX_DARWIN)/lib";
+				INSTALL_PATH_LINUX = "$(INSTALL_PREFIX_LINUX)/include/UnitKit";
+				PRODUCT_NAME = unit_objc_kit;
+				SEPARATE_STRIP = YES;
+				SKIP_INSTALL = NO;
+			};
+			name = "Install-10.4";
+		};
+		41EE77C81500EFAF00B43EDE /* Install Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				HEADER_PATH_DARWIN = "$(INSTALL_PREFIX_DARWIN)/include/UnitKit";
+				HEADER_PATH_LINUX = "$(INSTALL_PREFIX_LINUX)/include/UnitKit";
+				INSTALL_PATH_DARWIN = "$(INSTALL_PREFIX_DARWIN)/lib";
+				INSTALL_PATH_LINUX = "$(INSTALL_PREFIX_LINUX)/include/UnitKit";
+				PRODUCT_NAME = unit_objc_kit;
+				SKIP_INSTALL = NO;
+			};
+			name = "Install Debug";
+		};
+		41EE77C91500EFAF00B43EDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_PATH_DARWIN = "$(INSTALL_PREFIX_DARWIN)/include/UnitKit";
+				HEADER_PATH_LINUX = "$(INSTALL_PREFIX_LINUX)/include/UnitKit";
+				INSTALL_PATH_DARWIN = "$(INSTALL_PREFIX_DARWIN)/lib";
+				INSTALL_PATH_LINUX = "$(INSTALL_PREFIX_LINUX)/include/UnitKit";
+				PRODUCT_NAME = unit_objc_kit;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		417EBCBB08C5FB43001B041E /* Build configuration list for PBXNativeTarget "UnitKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				417EBCBD08C5FB43001B041E /* Install-10.5+ */,
+				41DB4BCB146C10C9003DE495 /* Install-10.4 */,
+				41DB4996146BEC04003DE495 /* Install Debug */,
+				417EBCBC08C5FB43001B041E /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Install-10.5+";
+		};
+		417EBCBF08C5FB43001B041E /* Build configuration list for PBXAggregateTarget "Xcode Integration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				417EBCC108C5FB43001B041E /* Install-10.5+ */,
+				41DB4BD0146C10C9003DE495 /* Install-10.4 */,
+				41DB499B146BEC04003DE495 /* Install Debug */,
+				417EBCC008C5FB43001B041E /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Install-10.5+";
+		};
+		417EBCC308C5FB43001B041E /* Build configuration list for PBXNativeTarget "ukrun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				417EBCC508C5FB43001B041E /* Install-10.5+ */,
+				41DB4BCC146C10C9003DE495 /* Install-10.4 */,
+				41DB4997146BEC04003DE495 /* Install Debug */,
+				417EBCC408C5FB43001B041E /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Install-10.5+";
+		};
+		417EBCC708C5FB43001B041E /* Build configuration list for PBXNativeTarget "TestBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				417EBCC908C5FB43001B041E /* Install-10.5+ */,
+				41DB4BCE146C10C9003DE495 /* Install-10.4 */,
+				41DB4999146BEC04003DE495 /* Install Debug */,
+				417EBCC808C5FB43001B041E /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Install-10.5+";
+		};
+		417EBCCB08C5FB43001B041E /* Build configuration list for PBXNativeTarget "TestFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				417EBCCD08C5FB43001B041E /* Install-10.5+ */,
+				41DB4BCF146C10C9003DE495 /* Install-10.4 */,
+				41DB499A146BEC04003DE495 /* Install Debug */,
+				417EBCCC08C5FB43001B041E /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Install-10.5+";
+		};
+		417EBCCF08C5FB43001B041E /* Build configuration list for PBXNativeTarget "UnitKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				417EBCD108C5FB43001B041E /* Install-10.5+ */,
+				41DB4BCD146C10C9003DE495 /* Install-10.4 */,
+				41DB4998146BEC04003DE495 /* Install Debug */,
+				417EBCD008C5FB43001B041E /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Install-10.5+";
+		};
+		417EBCD308C5FB43001B041E /* Build configuration list for PBXProject "UnitKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				417EBCD508C5FB43001B041E /* Install-10.5+ */,
+				41DB4BC9146C10C9003DE495 /* Install-10.4 */,
+				41DB4995146BEC04003DE495 /* Install Debug */,
+				417EBCD408C5FB43001B041E /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Install-10.5+";
+		};
+		41DB49EE146BF357003DE495 /* Build configuration list for PBXAggregateTarget "UnitKit-Install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41DB49DD146BF286003DE495 /* Install-10.5+ */,
+				41DB4BCA146C10C9003DE495 /* Install-10.4 */,
+				41DB49DC146BF286003DE495 /* Install Debug */,
+				41DB49DB146BF286003DE495 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Install-10.5+";
+		};
+		41EE77AA1500E10200B43EDE /* Build configuration list for PBXNativeTarget "unit_c_kit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41EE779B1500E0F800B43EDE /* Install-10.5+ */,
+				41EE779C1500E0F800B43EDE /* Install-10.4 */,
+				41EE779D1500E0F800B43EDE /* Install Debug */,
+				41EE779E1500E0F800B43EDE /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Install-10.5+";
+		};
+		41EE77CC1500EFBE00B43EDE /* Build configuration list for PBXNativeTarget "unit_objc_kit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41EE77C61500EFAF00B43EDE /* Install-10.5+ */,
+				41EE77C71500EFAF00B43EDE /* Install-10.4 */,
+				41EE77C81500EFAF00B43EDE /* Install Debug */,
+				41EE77C91500EFAF00B43EDE /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Install-10.5+";
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
