@@ -1,15 +1,17 @@
-UnitKit was created and is maintained by James Duncan Davidson. You can find out more about UnitKit at http://unitkit.org/
+UnitKit was created by James Duncan Davidson. You used to be able to find out more about UnitKit at http://unitkit.org/
 
-Many people have given ideas, suggestions, and feedback to UnitKit. In particular Mike Clark, Joseph Heck, Glenn Vanderburg, and Daniel Steinberg provided feedback during the early development of UnitKit that materially shaped the current product. 
+UnitKit-fixes is maintained by Nat! (currently at: https://bitbucket.org/mulle_nat/unitkit-fixes)
 
-Michael Milvich contributed the initial NSException test macros, test handler code, and associated tests. 
+Many people have given ideas, suggestions, and feedback to UnitKit. In particular Mike Clark, Joseph Heck, Glenn Vanderburg, and Daniel Steinberg provided feedback during the early development of UnitKit that materially shaped the current product.
 
-Peter Johnson contributed information about how to run tests in the debugger and prompted a few changes to make debugging tests easier. 
+Michael Milvich contributed the initial NSException test macros, test handler code, and associated tests.
 
-Jonathan Wight contributed information helping to untangle the best way to test embeddeable frameworks. 
+Peter Johnson contributed information about how to run tests in the debugger and prompted a few changes to make debugging tests easier.
 
-David Steinbrunner suggested many changes to both this manual and the example code that comes with UnitKit. 
+Jonathan Wight contributed information helping to untangle the best way to test embeddeable frameworks.
 
-Mark Dalrymple contributed quiet mode and fixed a bug with multiple test bundles not being executed correctly. 
+David Steinbrunner suggested many changes to both this manual and the example code that comes with UnitKit.
+
+Mark Dalrymple contributed quiet mode and fixed a bug with multiple test bundles not being executed correctly.
 
 Nicolas Roard contributed patches allowing for UnitKit to run under GNUStep.

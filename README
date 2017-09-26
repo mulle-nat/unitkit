@@ -1,11 +1,10 @@
 --------------------------------------------
 UnitKit README
 --------------------------------------------
-Version 1.1, October, 2004 
-http://unitkit.org/
+https://github.com/mulle_nat/unitkit-fixes
 --------------------------------------------
-
-UnitKit is a unit test framework for Objective-C. 
+UnitKit is a unit test framework for Objective-C with some test support for C
+as well.
 
 The documentation for UnitKit is delivered as part of the distribution as the Manual.pdf file. It should contain everything you need to know to get started with UnitKit as well as serve as a resource guide.
 
@@ -18,7 +17,7 @@ Installing UnitKit is easy enough. Simply double click the UnitKit.pkg file that
 	/usr/local/bin/ukrun
 	/Library/Frameworks/UnitKit.framework
 	/Library/Application Support/Apple/Developer Tools
-	
+
 Unlike earlier versions of UnitKit, this package should not glom symlinked directories (for example, if you symlink /usr/local to some other location).
 
 --------------------------------------------
@@ -27,7 +26,7 @@ BUILDING FOR MAC OS X
 
 To build under Mac OS X, open up the UnitKit.xcode project and build away. Or, you can build UnitKit into its final deployment location using the following:
 
-	$ sudo xcodebuild -target ukrun DSTROOT=/ install
+	$ sudo xcodebuild install
 
 --------------------------------------------
 BUILDING FOR GNUSTEP
@@ -69,9 +68,87 @@ Then, after building your code, just type:
 
 As ukrun executes, it'll will print out a list of the tests and their status.
 
---------------------------------------------	
+--------------------------------------------
 CHANGES
 --------------------------------------------
+
+1.4 -> 1.5
+
+* testTrue testFalse now use int instead of BOOL as a condition, which makes no
+  difference to user tests.
+
+* Rewrote test macros for plain C-compatibility
+
+* added unit_c_kit and unit_objc_kit as a very simple testing facility in plain
+  C. Test can be run in their own process, so assert() and abort() count as test
+  failures.
+
+* upgraded int checks to long long and float checks to double. Should be
+  backwards compatible and make things better f.e. when testing against
+  NSInteger.
+
+* new UKSetQuiet() macro to turn off temporarily the logging of successful tests
+  useful when generating a lot of tests in a loop.
+
+   old = UKSetQuiet( 1);
+   do_many_tests();
+   UKSetQuiet( old);
+
+
+1.3.1 -> 1.4
+
+* Removed use of isEqualTo:, replaced with isEqual:. This is a change that _should_ make no difference, but in fact could break some stuff. isEqualTo: is not defined in the NSObject protocol and its use has been erroneous.
+
+* Added -e switch to ukrun so unexpected exceptions terminate the test. It's my preference.
+
+* Started a manpage for ukrun with the help of mandrake. (http://sveinbjorn.org/files/software/mandrake/)
+
+* There is a weird Xcode 3 problem with "skip install" in Install Debug. Therefore it is now by hand turned off in the target configurartion.
+
+* Substituted some more @throw/@catch with NS_DURING. On runtimes, where @throw exists NS_DURING will be a macro for @throw anway. UKRaisesExceptionClass only works for apples OBJC2 it seems.
+
+* Renamed doesNotRaisesException to doesNotRaiseException, but the old method still works.
+
+
+1.3 -> 1.3.1
+
+* Changed compilation detection code for runtimes.
+
+* Renamed "Test Source" folder to "TestSource", to make it easier for make.
+
+* Rewrote somewhat suspicious CFRunLoop code. New code passes one test more consistently. There is a fallback, if CFRunLoop is not available.
+
+* Changed the way the project is linked together for future goodness.
+
+* Changed GNUmakefiles, so that UnitKit has a fighting chance to be buildable on GNUSTEP. It compiles but the framework isn't properly installed.
+
+
+1.2.1 -> 1.3
+
+* Removed "same difference" code with NS_DURING vs @catch. Removed RELEASENOTES.txt and put them in README.txt again (where the other CHANGES are)
+
+* Added option to specify classes to test. Invoke with -test <classname>.
+
+* Added UKPointersEqual and UKPointersNotEqual
+
+
+1.2 -> 1.2.1
+
+* Added a configuration Install-10.5+ and some code, so that 64bit also works. Made it a fat file with ppc support also.
+
+1.1 -> 1.2
+
+* Updated the Xcode Integration files.
+
+* Unconfused the Xcode settings in the project and the targets. Changed the targets to "Install", "Install Debug", "Debug". Both "Install" targets will now directly build into "/Library/Frameworks". But you need "Install" for the Xcode Integration files.
+
+* Removed the precompiled Prefix header.
+
+* Changed import headers sequencing.
+
+* You don't have to link against Foundation.framework anymore but just against UnitKit.framework for your tests. Also don't import <Foundation/Foundation.h> but just <UnitKit/UnitKit.h>. This will be useful in the years to come :)
+
+* Removed dependencies on Carbon and AppKit.
 
 1.0.1 -> 1.1
 
@@ -81,13 +158,15 @@ CHANGES
 
 * Changed uncaught exception handler to also report the human readable reason for the exception
 
-* Changed [UKRunnner run] to [UKRunner runTests]. Apparently GNUstep barfs on the "run" method declaration. 
+* Changed [UKRunnner run] to [UKRunner runTests]. Apparently GNUstep barfs on the "run" method declaration.
 
 * Modified [UKRunner runTests] to check for Mac OS X 10.3 and if so, use the new exception syntax, else use the old NS_DURING style macros.
 
 * Modified UKTestClassesFromBundle to check for GNUstep and adjust its code for for getting test class names from bundles
 
 * Modified UKTestMethodNamesFromClass to check for GNUstep and adjust its code for getting test methods from classes
+
+* Changed the UnitKit bundle target template to only depend on the Foundation.framework (and not AppKit). You still have to add Foundation as a framework to the project, but this fixes a bug in some cross-development situtations.
 
 1.0 -> 1.0.1
 
@@ -100,7 +179,7 @@ FEEDBACK
 Comments, questions, rants, and raves are always welcome. Please consider joining the mailing list. To subscribe, send email to:
 
     unitkit-subscribe@unitkit.org
-    
+
 You can also mail me personally, but I can't guarantee a speedy response.
 
 --------------------------------------------
@@ -110,9 +189,13 @@ LICENSE
 UnitKit is licensed under the Apache License 2.0. You may not use UnitKit except in compliance with the License. You can obtain a copy of the license at:
 
     http://www.apache.org/licenses/LICENSE-2.0
-    
+
 The use of the Apache license does not indicate that this project is affiliated with, or endorsed by, the Apache Software Foundation.
 
 --------------------------------------------
 James Duncan Davidson
 duncan@x180.net
+
+Nat!
+nat@mulle-kybernetik.com
+
