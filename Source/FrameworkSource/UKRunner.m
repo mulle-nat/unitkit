@@ -97,7 +97,7 @@
    {
       bundlePath = [bundleNames objectAtIndex:i];
       
-#if DEBUG         
+#if DEBUG_VERBOSE
       printf( "bundle path: \"%s\"\n", [bundlePath cString]);
 #endif         
       bundlePath = [bundlePath stringByExpandingTildeInPath];
@@ -107,7 +107,7 @@
          bundlePath = [bundlePath stringByStandardizingPath];
       }
       
-#if DEBUG         
+#if DEBUG_VERBOSE         
       printf("looking for bundle at path: \"%s\"\n", [bundlePath cString]);
 #endif         
       // make sure bundle exists and is loaded
@@ -365,7 +365,7 @@ usage:
    NS_ENDHANDLER
       
    NS_DURING
-#if DEBUG
+#if DEBUG_VERBOSE
       printf( "testing -[%s %s]\n", [NSStringFromClass( [testObject class]) cString], [testMethodName cString]);
 #endif      
       testSel = NSSelectorFromString(testMethodName);

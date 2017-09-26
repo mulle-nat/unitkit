@@ -47,5 +47,3 @@
 #  define UK_OBJC_API_VERSION   UK_OBJC_RUNTIME_GNU1
 # endif
 #endif
-
-
