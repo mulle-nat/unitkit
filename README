@@ -2,6 +2,8 @@
 UnitKit README
 --------------------------------------------
 https://github.com/mulle_nat/unitkit-fixes
+based on UnitKit 1.1 with several fixes and
+additions.
 --------------------------------------------
 UnitKit is a unit test framework for Objective-C with some test support for C
 as well.
