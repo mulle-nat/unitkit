@@ -1066,6 +1066,7 @@
 		417EBCD408C5FB43001B041E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CURRENT_PROJECT_VERSION = 1.5;
 				DYLIB_COMPATIBILITY_VERSION = 1.5;
 				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
@@ -1157,6 +1158,7 @@
 		41DB4995146BEC04003DE495 /* Install Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1.5.1;
 				DEPLOYMENT_LOCATION = YES;
