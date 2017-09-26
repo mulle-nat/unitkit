@@ -30,6 +30,9 @@
 
 #import "_UnitKitParentIncludes.h"
 
+@interface NSBundle (APIAddedAfterTiger)
+- (BOOL)preflightAndReturnError:(NSError *)error;
+@end
 
 @implementation UKRunner
 
@@ -119,6 +122,16 @@
          // XXX i18n as well as message improvements
          printf("Test bundle \"%s\" could not be found\n", [bundlePath cString]);
          return -1;
+      }
+      
+      if (testBundle && [testBundle respondsToSelector:@selector(preflightAndReturnError:)])
+      {
+        NSError *error = nil;
+        BOOL willLoad = [testBundle preflightAndReturnError:&error];
+        
+        if ( error && ! willLoad) {
+            printf("Test bundle \"%s\" exists, but will not load: %s\n", [bundlePath cString], [[error description] cString]);
+        }
       }
       
       if( ! [testBundle load]) 
