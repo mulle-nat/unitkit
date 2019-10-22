@@ -23,10 +23,11 @@
 #ifdef GNUSTEP
 # import <GNUstepBase/GSObjCRuntime.h>  // ??
 #else
-# if defined(__MULLE_OBJC__)
-#  import <mulle_objc_runtime/mulle_objc_runtime.h>
+# ifdef __MULLE_OBJC__
+#  import <MulleObjC/mulle-objc.h>
+#  import <mulle-objc-compat/mulle-objc-compat.h>
 # else
-#  if defined(__APPLE__)
+#  ifdef __APPLE__
 #   import <objc/objc-runtime.h>
 #  else
 #   import <objc/runtime.h>
@@ -39,21 +40,28 @@
 #define UK_OBJC_RUNTIME_GNU1    1
 #define UK_OBJC_RUNTIME_APPLE2  2
 #define UK_OBJC_RUNTIME_GNU2    3
+#define UK_OBJC_RUNTIME_MULLE   4
 
-#if defined(__OBJC2__) && __MAC_OS_X_VERSION_MAX_ALLOWED >= 1050
-# define UK_IS_OBJC2_RUNTIME    (UK_OBJC_API_VERSION >= UK_OBJC_RUNTIME_APPLE)
-#endif
-#define UK_IS_APPLE_RUNTIME     (! UK_IS_GNU_RUNTIME)
-#define UK_IS_GNU_RUNTIME       (UK_OBJC_API_VERSION & 1)
 
 // define OBJC_API_VERSION
-#ifdef __APPLE__
-# include <objc/objc-api.h>
-# define UK_OBJC_API_VERSION    OBJC_API_VERSION
+#ifdef __MULLE_OBJC__
+# define UK_OBJC_API_VERSION    UK_OBJC_RUNTIME_MULLE  
 #else
-# if __GNU_LIBOBJC__ >= 20100911
-#  define UK_OBJC_API_VERSION   UK_OBJC_RUNTIME_GNU2
+# ifdef __APPLE__
+#  include <objc/objc-api.h>
+// either UK_OBJC_RUNTIME_NEXT or UK_OBJC_RUNTIME_APPLE2
+#  define UK_OBJC_API_VERSION    OBJC_API_VERSION  
 # else
-#  define UK_OBJC_API_VERSION   UK_OBJC_RUNTIME_GNU1
+#  if __GNU_LIBOBJC__ >= 20100911
+#   define UK_OBJC_API_VERSION   UK_OBJC_RUNTIME_GNU2
+#  else
+#   define UK_OBJC_API_VERSION   UK_OBJC_RUNTIME_GNU1
+#  endif
 # endif
 #endif
+
+#if defined( __MULLE_OBJC__) || (defined(__OBJC2__) && __MAC_OS_X_VERSION_MAX_ALLOWED >= 1050)
+# define UK_IS_OBJC2_RUNTIME    (UK_OBJC_API_VERSION >= UK_OBJC_RUNTIME_APPLE2)
+#endif
+#define UK_IS_GNU_RUNTIME       (UK_OBJC_API_VERSION & 1)
+#define UK_IS_APPLE_RUNTIME     (! UK_IS_GNU_RUNTIME)

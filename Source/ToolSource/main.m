@@ -21,10 +21,10 @@
  The use of the Apache License does not indicate that this project is
  affiliated with the Apache Software Foundation.
  */
-#import <UnitKit/UKRunner.h>
+#import "UKRunner.h"
 
 
-int   main(int argc, const char *argv[])
+int   UKRunnerMain( void)
 {
    int                 retval;
    NSAutoreleasePool   *pool;
@@ -34,5 +34,15 @@ int   main(int argc, const char *argv[])
    retval = [UKRunner runTests];
    
    [pool release];
+   return retval;
+}
+
+
+int   main(int argc, const char *argv[])
+{
+   int  retval;
+
+   retval = UKRunnerMain();
+
    return retval;
 }

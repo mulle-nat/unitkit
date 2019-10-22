@@ -28,6 +28,9 @@
 #include <stdlib.h>
 #include <string.h>
 #include <sys/mman.h>
+#ifdef __linux__
+# include <sys/wait.h>
+#endif
 #include <unistd.h>
 #include "uk_handler.h"
 
@@ -192,7 +195,9 @@ static int   run_test_fork( void (*f)( void *userinfo), void *userinfo, char *fi
       
       signal( SIGTRAP, _just_exit);
       signal( SIGABRT, _just_exit);
+#ifdef __APPLE__      
       signal( SIGEMT,  _just_exit);
+#endif      
       signal( SIGFPE,  _just_exit);
       signal( SIGBUS,  _just_exit);
       signal( SIGSEGV, _just_exit);

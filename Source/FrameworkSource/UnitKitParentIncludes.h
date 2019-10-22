@@ -20,23 +20,15 @@
  The use of the Apache License does not indicate that this project is
  affiliated with the Apache Software Foundation.
  */
-#ifndef USE_MULLE_FOUNDATION
-# define USE_MULLE_FOUNDATION  ! (defined( __APPLE__) || defined( GNUSTEP))
-#endif
-
 #ifdef __OBJC__
-
-# if USE_MULLE_FOUNDATION
-#  import <MulleFoundation/MulleFoundation.h>
-# else
-#  import <Foundation/Foundation.h>
-# endif
+# import <Foundation/Foundation.h>
+#endif
 
 #ifndef HAVE_THROW
 # ifdef OBJC_API_VERSION
 #  define HAVE_THROW (OBJC_API_VERSION >= 2)
 # else
-#  if defined( __GNU_LIBOBJC__) && __GNU_LIBOBJC__ >= 20100911
+#  if defined( __GNU_LIBOBJC__) && __GNU_LIBOBJC__ >= 20100911 || defined( __MULLE_OBC__)
 #   define HAVE_THROW  1
 #  else
 #   define HAVE_THROW  0
@@ -44,10 +36,3 @@
 # endif
 #endif
 
-#else
-
-# if USE_MULLE_FOUNDATION
-#  include <MulleFoundation/MulleFoundation.h>
-# endif
-
-#endif
